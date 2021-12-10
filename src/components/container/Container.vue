@@ -1,5 +1,6 @@
 
 
+
 <template>
   <section
     class="el-container"
@@ -38,22 +39,21 @@ const isVertical = computed(() => {
     }
   }
 })
+
 </script>
-
-
 <style lang="scss">
-  @import '../styles/mixin';
-  
-  @include b(container) {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    flex-basis: auto;
-    box-sizing: border-box;
-    min-width: 0;
-    @include when(vertical) {
-      flex-direction: column;
-    }
+@import '../styles/mixin';
+@include b(container) {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+  min-width: 0;
+
+  @include when(vertical) {
+    flex-direction: column;
   }
-  
-  </style>
+}
+
+</style>
