@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, defineProps } from 'vue'
 
 defineProps<{ msg: string }>()
 
@@ -7,6 +7,8 @@ const count = ref(0)
 </script>
 
 <template>
+
+  <div>
   <h1>{{ msg }}</h1>
 
   <p>
@@ -31,6 +33,8 @@ const count = ref(0)
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+
+</div>
 </template>
 
 <style scoped>
